@@ -1,0 +1,22 @@
+.SignInModule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .card:first-child {
+    border: none;
+  }
+
+  .card {
+    max-width: 350px;
+    margin-bottom: 25px;
+    
+    .btn {
+      width: 100%;
+    }
+    
+    .card-header {
+      text-align: center;
+    }
+  }  
+}

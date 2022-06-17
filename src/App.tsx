@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useReducer } from 'react';
+import Routes from './Routes';
+import Navbar from './Components/Navbar';
+import { BrowserRouter } from 'react-router-dom';
+import { GlobalContext, initialState } from './Store';
+import { reducer } from './Store/reducer';
 
 function App() {
+  const [globalState, dispatch] = useReducer(reducer, initialState);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalContext.Provider value={[globalState, dispatch]}>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar />
+          { Routes }
+        </div>
+      </BrowserRouter>
+    </GlobalContext.Provider>
   );
 }
 

@@ -1,0 +1,20 @@
+.navbar {
+	.container-fluid {
+		padding-left: 50px;
+		padding-right: 50px;
+	
+		.navbar-brand > * {
+			margin-right: 10px;
+		}
+		
+		.navbar-user {
+			display: flex;
+			align-items: center;
+		}
+
+		.nav-link {
+			border: none;
+			background: transparent;
+		}
+	}
+}

@@ -1,0 +1,13 @@
+// Component scss.
+@import "navbar";
+
+// Module scss.
+@import "./Modules/BalanceModule";
+@import "./Modules/SignInModule";
+@import "./Modules/TransferModule.scss";
+
+// Page scss.
+@import "./Pages/AccountsPage";
+@import "./Pages/SignInPage";
+
+

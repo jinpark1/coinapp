@@ -1,0 +1,21 @@
+.AccountsPage {
+  margin-left: 0px;
+  margin-top: 25px;
+
+  .col:first-child {
+    max-width: 350px;
+    padding-left: 20px;
+  }
+
+  .col:nth-child(2) {
+    padding-right: 40px;
+    padding-left: 20px;
+
+    .container-lg {
+      margin: 0;
+    }
+  }
+  .container-md {
+    margin-bottom: 25px;
+  }
+}
